@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container-fluid overflow-hidden">
+
+        <nav class="row-12 navbar navbar-expand bg-body-tertiary">
+            <div class="container-fluid">
+                <!--logo-->
+              <a class="navbar-brand h1 fs-2" href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #06090f;"></i>  Instagram</a>
+
+              <div class="d-flex gap-2">
+                 <!--btn para activar modal-->
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new Post</button>
+
+                <div class="dropdown dropstart">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                    </button>
+                    <ul class="dropdown-menu me-5 dropstart">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                      <hr>
+                      <li><a class="dropdown-item text-danger" href="#">login</a></li>
+                    </ul>
+                  </div>
+              </div>   
+            </div>    
+        </nav>
+        <!--modal-->
+        <div class="modal fade row-12" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content w-100 h-auto">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new Post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body w-100">
+                    <label class="form-label" for=""><h4>Caption:</h4></label>
+                    <br>
+                    <textarea class="form-control h-auto" id="exampleFormControlTextarea1" rows="10"  placeholder="Add the caption of your post here"></textarea>
+                    <div class="d-flex gap-2 mt-3">
+                        <button class="btn bg-secondary-subtle "><i class="fa-solid fa-camera" style="color: #000000;"></i></button>
+                        <button class="btn bg-secondary-subtle"><i class="fa-solid fa-location-dot" style="color: #040a15;"></i></button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+            <!--final modal-->
+        </div>
+
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col d-flex align-items-center flex-column">
+                <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+                    </li>
+                    
+                  </ul>
+                  <div class="tab-content row" id="pills-tabContent">
+                    <!--Imagenes en grid-->
+                    <div class="row  tab-pane fade show active justify-content-center " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                        <div class="row row-cols-2 row-cols-md-3 m-3 p-0 ">
+
+                            <div class="col card mx-0 mb-5 p-0  mw-50" >
+                                 <img class="object-fit-cover w-100 h-100 m-0" src="https://th.bing.com/th/id/OIP.LI-_6hjnSk6XFFDA7s0hiQHaEo?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                              </div>
+    
+                              <div class="col card mb-5 p-0 mw-50" >
+                                <img class="object-fit-cover  w-100 h-100 m-0" src="https://p0.pikist.com/photos/195/89/dominican-republic-sunrise-dawn-morning-colors-colorful-beautiful-palms-palm-trees.jpg" class="card-img-top" alt="...">
+                                
+                              </div>
+    
+                              <div class="col card mb-5 p-0 " >
+                                
+                                <img class="object-fit-cover w-100 h-100 m-0" src="https://th.bing.com/th/id/OIP.wp-MMS7X6tEZNqc760iyuQHaFD?pid=ImgDet&rs=1"  alt="...">
+                                
+                              </div>
+    
+                              <div class="col card mb-5 p-0" >
+                                
+                                <img class="object-fit-cover w-100 h-100 m-0" src="https://th.bing.com/th/id/R.c3ec92449260a9665c4fe94c76b28e47?rik=9aYbLmgup2gK7w&riu=http%3a%2f%2falexander-the-great-beach-hotel-paphos.hotel-ds.com%2fdata%2fPhotos%2f940x500%2f6844%2f684452%2f684452688.JPEG&ehk=kOBLZ%2fz0p73RpUw%2bwpHlWrGG2vVvGaSye5ZeJLKYx00%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+                                
+                              </div>
+    
+                              <div class="col card mb-5 p-0 " >
+                            
+                                <img class="object-fit-cover w-100 h-100 m-0" src="https://joinup.ua/media/2018/06/hotelinfo2.jpg" class="card-img-top" alt="...">
+                                
+                              </div> 
+
+                              <div class=" card mb-5 p-0 " >
+                            
+                                <img class="object-fit-cover w-100 h-100 m-0" src="https://wonderfulengineering.com/wp-content/uploads/2016/01/Miami-wallpaper-16.jpg" class="card-img-top" alt="...">
+                                
+                              </div> 
+
+                        </div>
+                        
+
+                       
+
+                    </div>
+                    <!--Imagenes en vertical-->
+                    <div class="col-12 tab-pane fade d-flex align-items-center flex-column" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                        <div class="card  w-50" >
+                            <h5 class="card-title ms-2">The best Hollydays</h3>
+                            <img class="object-fit-cover" src="https://th.bing.com/th/id/OIP.LI-_6hjnSk6XFFDA7s0hiQHaEo?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>213 Likes</strong></span>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+
+                          <div class="card mb-5 w-50" >
+                            <h5 class="card-title ms-2">The best Hollydays</h3>
+                            <img class="object-fit-cover" src="https://p0.pikist.com/photos/195/89/dominican-republic-sunrise-dawn-morning-colors-colorful-beautiful-palms-palm-trees.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>213 Likes</strong></span>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+
+                          <div class="card mb-5 w-50" >
+                            <h5 class="card-title ms-2">The best Hollydays</h3>
+                            <img class="object-fit-cover" src="https://th.bing.com/th/id/OIP.wp-MMS7X6tEZNqc760iyuQHaFD?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>213 Likes</strong></span>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+
+                          <div class="card mb-5 w-50" >
+                            <h5 class="card-title ms-2">The best Hollydays</h3>
+                            <img class="object-fit-cover" src="https://th.bing.com/th/id/R.c3ec92449260a9665c4fe94c76b28e47?rik=9aYbLmgup2gK7w&riu=http%3a%2f%2falexander-the-great-beach-hotel-paphos.hotel-ds.com%2fdata%2fPhotos%2f940x500%2f6844%2f684452%2f684452688.JPEG&ehk=kOBLZ%2fz0p73RpUw%2bwpHlWrGG2vVvGaSye5ZeJLKYx00%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>213 Likes</strong></span>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+
+                          <div class="card mb-5 w-50" >
+                            <h5 class="card-title ms-2">The best Hollydays</h3>
+                            <img class="object-fit-cover" src="https://joinup.ua/media/2018/06/hotelinfo2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>213 Likes</strong></span>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+
+                    </div>
+                  
+                  </div>
+            </div>
+
+            
+
+        </div>
+        
+
+
+        <!--fin del container-->
+    </div>
+    
+    <script src="https://kit.fontawesome.com/ee37c672c1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
